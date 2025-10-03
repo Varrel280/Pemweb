@@ -1,0 +1,164 @@
+/* Reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url("1200px-Logo_Universitas_Sumatera_Utara.svg.png") repeat;
+    background-size: 190px;   
+    opacity: 0.95;             
+    color: #111;
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    background: #fff;           
+    color: #111;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #c69e1b; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo-usu {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Navigasi */
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Profil */
+.profil {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #111;
+}
+
+.profil ul {
+    list-style: none;
+}
+
+/* About & Jadwal */
+.about, .jadwal {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #111;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    color: #111;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #f0f0f0;
+    color: #111;
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+/* Sosial Media */
+.sosmed {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.sosmed a {
+    display: inline-block;
+    margin: 5px 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sosmed a:hover {
+    color: darkblue;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    color: #111;
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil img {
+        width: 120px;
+        height: 120px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
